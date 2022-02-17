@@ -23,3 +23,5 @@ function example() {
     return value4;
   }
 }
+
+// 위의 경우에는 조건을 분석해서 switch case 문을 사용하는 게 더 좋아보임
