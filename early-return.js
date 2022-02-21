@@ -47,3 +47,49 @@ function login() {
 
   return "로그인 성공";
 }
+
+// 두 번째 예시
+
+function 오늘하루(condition, weather, isJob) {
+  if (condition === "GOOD") {
+    공부();
+    게임();
+    유튜브보기();
+  }
+
+  if (weather === "GOOD") {
+    운동();
+    빨래();
+  }
+
+  if (isJob === "GOOD") {
+    야간업무();
+    조기취침();
+  }
+}
+
+// early return 적용
+
+function 오늘하루(condition, weather, isJob) {
+  if (condition !== "GOOD") {
+    return;
+  }
+
+  공부();
+  게임();
+  유튜브보기();
+
+  if (weather !== "GOOD") {
+    return;
+  }
+
+  운동();
+  빨래();
+
+  if (isJob !== "GOOD") {
+    return;
+  }
+
+  야간업무();
+  조기취침();
+}
