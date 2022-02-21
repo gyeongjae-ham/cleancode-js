@@ -10,3 +10,6 @@ if (x >= 1) {
 } else {
   console.log("Else");
 }
+
+// else if 를 else 후 새로운 if라고 생각해서 최대한 쓰지 않도록 하자
+// 많은 else if를 쓸 경우에 switch 문을 사용하자
