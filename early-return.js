@@ -39,6 +39,10 @@ function loginService(isLogin, user) {
     return registerUser(user);
   }
 
+  login();
+}
+
+function login() {
   refreshToken();
 
   return "로그인 성공";
