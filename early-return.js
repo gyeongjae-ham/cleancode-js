@@ -93,3 +93,5 @@ function 오늘하루(condition, weather, isJob) {
   야간업무();
   조기취침();
 }
+
+// 하나의 의존성이 많은 조건을 가지고 있을 경우 early return으로 구분 지을 필요가 있다
